@@ -1,0 +1,47 @@
+<app-header [pageTitle]="'CHECK-IN'"></app-header>
+
+<div class="checkin">
+  <form [formGroup]="checkinForm" (ngSubmit)="retrieveBooking()" class="checkin__form">
+    <h2 class="checkin__header">RETRIEVE YOUR<br>BOOKING</h2>
+    <hr class="checkin__line" />
+    <p class="checkin__instruction">
+      You can find your booking by filling out your family name and the booking code in your booking confirmation.
+    </p>
+    <div class="checkin__form-group">
+      <label for="bookingCode">Booking Code</label>
+      <input
+        type="text"
+        id="bookingCode"
+        formControlName="bookingCode"
+        required
+        pattern="^[A-Z2-9]{5,6}$"
+      />
+      <span class="checkin__error-message" *ngIf="checkinForm.get('bookingCode')?.invalid && checkinForm.get('bookingCode')?.touched">
+        Booking code must have a length between 5 and 6 characters and contain only uppercase letters A-Z and numbers 2-9.
+      </span>
+    </div>
+
+    <div class="checkin__form-group">
+      <label for="lastName">Last Name</label>
+      <input
+        type="text"
+        id="lastName"
+        formControlName="lastName"
+        required
+        minlength="2"
+        maxlength="30"
+      />
+      <span class="checkin__error-message" *ngIf="checkinForm.get('lastName')?.invalid && checkinForm.get('lastName')?.touched">
+        <span *ngIf="checkinForm.get('lastName')?.hasError('required')">Last name is required.</span>
+        <span *ngIf="checkinForm.get('lastName')?.hasError('minlength')">Last name must be at least 2 characters long.</span>
+        <span *ngIf="checkinForm.get('lastName')?.hasError('maxlength')">Last name cannot exceed 30 characters.</span>
+      </span>
+    </div>
+
+    <div class="checkin__form-group">
+      <span class="checkin__error-message">{{ errorMessage }}</span>
+    </div>
+
+    <button type="submit" [disabled]="checkinForm.invalid" class="checkin__submit-button">Retrieve booking</button>
+  </form>
+</div>
