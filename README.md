@@ -36,7 +36,7 @@ To get started with the project, follow the steps below:
    ```      
 5. Start the frontend application in the different terminal:
    ```   
-    cd ../frontend
+    cd frontend
     ng serve
    ```      
 6. Open the application in your browser: 
