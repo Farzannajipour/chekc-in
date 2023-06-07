@@ -1,10 +1,10 @@
-# Project Name
+# Flight Check-in
 
 The project is called `FlightBooking`. It is an Angular web application with a NodeJS GraphQL backend server that allows users to check-in for flights and view their booking details.
 
 ## Table of Contents
 
-- [Project Name](#project-name)
+- [Flight Check-in](#flight-check-in)
   - [Table of Contents](#table-of-contents)
   - [Getting Started](#getting-started)
   - [Features](#features)
