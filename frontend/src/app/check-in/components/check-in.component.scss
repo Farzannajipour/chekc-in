@@ -1,0 +1,76 @@
+.checkin {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    text-transform: uppercase;
+    color: #003145;
+    margin-bottom: 10px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  &__line {
+    width: 10px;
+    height: 1px;
+    background-color: #003145;
+    margin-bottom: 20px;
+  }
+
+  &__instruction {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    max-width: 15%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      max-width: 70%;
+      padding: 0;
+      border: none;
+    }
+  }
+
+  &__form-group {
+    margin-bottom: 20px;
+  }
+
+  &__form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__form input {
+    width: calc(100% - 10%); /* Decreased input width */
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__error-message {
+    color: red;
+  }
+
+  &__submit-button {
+    background-color: #D40603;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    border-radius: 5px; /* Added border-radius */
+
+    @media (max-width: 768px) {
+      width: 70%;
+      margin-top: 20px;
+    }
+  }
+}
