@@ -19,7 +19,6 @@ To get started with the project, follow the steps below:
    
 2. Install the dependencies: 
    ```
-    cd flight-booking
     cd frontend
     npm install
     cd ..
