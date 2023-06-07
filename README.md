@@ -27,17 +27,16 @@ To get started with the project, follow the steps below:
     ```
 3. Start the mock API server:
    ```   
-   cd backend
    node mock-api-server.js
    ```   
-4. Start the backend server:
+4. Start the backend server in the different terminal:
    ```   
     cd backend
     node server.js
    ```      
-5. Start the frontend application:
+5. Start the frontend application in the different terminal:
    ```   
-    cd frontend
+    cd ../frontend
     ng serve
    ```      
 6. Open the application in your browser: 
