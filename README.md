@@ -62,4 +62,5 @@ The following improvements are suggested for the FlightBooking application:
 - Increase the quantity of tests to ensure comprehensive test coverage.
 - Enhance accessibility (a11y) by adding appropriate aria labels and ensuring the application meets accessibility standards.
 - Utilize the trackBy function when rendering lists to improve performance by efficiently updating and re-rendering list items.
-- Improve the experience of the accordion in the booking details page
+- Improve the experience of the accordion in the booking details page.
+- Add Github Actions to check the PRs automatically.
