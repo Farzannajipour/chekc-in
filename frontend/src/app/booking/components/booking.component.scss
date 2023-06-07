@@ -1,0 +1,100 @@
+.booking {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+
+  &__title {
+    font-size: 24px;
+    padding: 5px 20px;
+    color: #00a1de; 
+  }
+
+  &__code {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  &__contact-list,
+  &__passengers {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+
+    &-item {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__itinerary {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+
+    & > * {
+      margin-bottom: 10px;
+    }
+
+    &__type {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    &__connection {
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+      margin-top: 10px;
+
+      & > * {
+        margin-bottom: 10px;
+      }
+
+      &__id {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+
+    &__segment {
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+      margin-top: 10px;
+
+      & > * {
+        margin-bottom: 10px;
+      }
+
+      &__id {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__connection-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+
+  &__connection-details {
+    display: none;
+
+    &.open {
+      display: block;
+    }
+  }
+
+  &__error-message {
+    color: #ff0000;
+    margin-top: 20px;
+  }
+}
